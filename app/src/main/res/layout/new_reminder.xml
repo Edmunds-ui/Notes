@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ievadiet tekstu" />
+
+    <Button
+        android:id="@+id/messageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="Saglabāt tekstu"
+        android:textSize="20dp">
+
+    </Button>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/datePickerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="Apstiprināt datumu"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setNoteBtn"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/setDatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/changeDateNRBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mainīt datumu"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setNoteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="Saglabāt ierakstu"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
